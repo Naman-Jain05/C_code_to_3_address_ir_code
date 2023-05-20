@@ -1,0 +1,16 @@
+	a=3
+	n=0
+	b=4
+	i=0
+L1:
+	t3=i<n
+	if( not t3)	goto L2
+	t1=b11
+	a=t1
+	t0=a*a
+	a=t0
+	t2=i11
+	i=t2
+	goto L1
+L2: 
+	c=a

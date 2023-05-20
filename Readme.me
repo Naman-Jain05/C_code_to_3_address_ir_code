@@ -1,0 +1,42 @@
+This is the Assignment 3 done by:
+BT20CSE003 Aaryan Patel
+BT20CSE034 Dhanesh Choudhary
+
+
+To install lex in linux type:
+sudo apt-get install flex
+
+To install yacc in linux type:
+sudo apt-get install bison
+
+To generate a three address code fire the command ..build.sh on terminal in 
+linux.
+
+OR 
+
+To run different test files write the following commands one by one in linux terminal:
+lex program.l
+yacc program.y
+gcc y.tab.c -ll
+./a.out test1
+
+The different test files are:
+test1
+test2
+test3
+test4
+test5
+test6
+
+The output that is the three address code will be found in the output file
+in the folder after all the commands havebeen executed. To see the three
+address code open the output file.
+
+I have generated the intermediate code for test.c file using the command:
+gcc fdump-tree-gimple test.c
+
+The above command generated a file with name test.c.006t.gimple which has 
+the intermediate code which we referred to generate  our code according to the note in the PDF.
+
+
+For the assignment-4, run the command python3 3_addr_to_mips.py, the output that will be generated is MIPS code for the input of three address code which is saved in 'output' file.The code conversion of 3-address code to MIPS is done in python.
